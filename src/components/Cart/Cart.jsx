@@ -1,8 +1,11 @@
 import React from 'react';
 import './Cart.css';
 const Cart = (props) => {
+  
     
     const {cart}=props;
+    console.log(cart);
+  
 
     let totalprice=0;
     let totalshipping=0;
@@ -16,10 +19,6 @@ const Cart = (props) => {
     const grandtotal=tax+totalshipping+totalprice;
     return (
         <div className='cart'>
-
-          
-
-
 
          <h2>Order Summary</h2>
          <p>Selected Items:{cart.length}</p>
